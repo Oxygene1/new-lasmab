@@ -1,0 +1,72 @@
+#blur-back {
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  position: fixed;
+  min-width: 100%;
+}
+.listed li {
+  margin-left: 1.5rem;
+}
+.active{
+  border-bottom: 2px solid #fff;
+}
+@media screen and (width > 768px) {
+  .storyAnimate {
+    background: url("../../assets/proxy.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    height: 75vh;
+    transition: 5s;
+    animation-name: animateBg;
+    animation-duration: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes animateBg {
+    0% {
+      background-image: url("../../assets/proxy2.jpeg");
+    }
+    20% {
+      background-image: url("../../assets/proxy3.jpeg");
+    }
+    40% {
+      background-image: url("../../assets/proxy4.jpeg");
+    }
+    60% {
+      background-image: url("../../assets/proxy5.jpeg");
+    }
+    80% {
+      background-image: url("../../assets/proxy2.jpeg");
+    }
+    100% {
+      background-image: url("../../assets/proxy.jpeg");
+    }
+  }
+  .hamburger {
+    display: none;
+  }
+  #blur-back {
+    justify-content: space-around;
+  }
+  .navigation {
+    display: flex;
+  }
+}
+@media screen and (width < 768px) {
+  .hamburger {
+    display: none;
+  }
+  .navigation {
+    display: none;
+  }
+  #blur-back {
+    justify-content: space-between;
+  }
+}
