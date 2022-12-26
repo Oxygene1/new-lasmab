@@ -2,13 +2,14 @@ import cn from "classnames";
 
 export const Container = ({
   as,
-  className,
-  fullHeight,
-  fullWidth,
-  flex,
-  align,
-  direction,
-  noGutter,
+  className = "",
+  fullHeight = false,
+  fullWidth = false,
+  flex = false,
+  align = "baseline",
+  direction = "row",
+  justify = "start",
+  noGutter = false,
   ...props
 }) => {
   let Component = as ?? "section";
@@ -17,6 +18,15 @@ export const Container = ({
     end: "items-end",
     baseline: "items-baseline",
     stretch: "items-stretch",
+  };
+
+  let justifyContent = {
+    center: "justify-center",
+    between: "justify-between",
+    start: "justify-start",
+    end: "justify-end",
+    around: "justify-around",
+    evenly: "justify-evenly",
   };
 
   let flexDirection = {
@@ -29,14 +39,18 @@ export const Container = ({
   return (
     <Component
       {...props}
-      className={cn({
-        flex,
-        "w-screen": fullWidth,
-        "h-screen": fullHeight,
-        "px-4 lg:px-10": !noGutter,
-        [alignItems[align]]: align,
-        [flexDirection[direction]]: direction,
-      })}
+      className={cn(
+        {
+          flex,
+          "w-screen": fullWidth,
+          "h-screen": fullHeight,
+          "px-4 lg:px-10": !noGutter,
+          [alignItems[align]]: align,
+          [flexDirection[direction]]: direction,
+          [justifyContent[justify]]: justify,
+        },
+        className
+      )}
     />
   );
 };

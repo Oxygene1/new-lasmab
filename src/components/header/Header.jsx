@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+// import React, { useState } from "react";
 import { HiMenu } from "react-icons/hi";
+
 const Header = () => {
-  const [isNavExpanded, isSetNavExpanded] = useState(false);
+  // const [isNavExpanded, isSetNavExpanded] = useState(false);
+
   return (
     <div>
       <div id="blur-back" className="flex flex-row p-4 container">
@@ -16,27 +17,27 @@ const Header = () => {
         <div className="navigation">
           <ul className="flex flex-row content-between listed text-white">
             <li>
-              <NavLink exact="true" activeclassname="active"  to="">
+              <a href="#home" className="active">
                 Home
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink to="values">Values</NavLink>
+              <a href="values">Values</a>
             </li>
             <li>
-              <NavLink to="our-schools">Our Schools</NavLink>
+              <a href="our-schools">Our Schools</a>
             </li>
             <li>
-              <NavLink to="board">Board</NavLink>
+              <a href="board">Board</a>
             </li>
             <li>
-              <NavLink to="news">News</NavLink>
+              <a href="news">News</a>
             </li>
             <li>
-              <NavLink to="contact">Contact</NavLink>
+              <a href="contact">Contact</a>
             </li>
             <li>
-              <button to="login">Login</button>
+              <button href="login">Login</button>
             </li>
           </ul>
         </div>

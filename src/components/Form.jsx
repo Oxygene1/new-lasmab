@@ -1,5 +1,5 @@
 import { FormProvider, useForm } from "react-hook-form";
-import { DevTool } from "@hookform/devtools";
+// import { DevTool } from "@hookform/devtools";
 
 /**
  * It takes in a bunch of props, and returns a form with a bunch of children

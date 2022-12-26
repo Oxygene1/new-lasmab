@@ -6,7 +6,7 @@ export const Typography = ({
   gutterBottom,
   color,
   paragraph,
-  variant,
+  className,
   ...props
 }) => {
   const Component = as ?? "p";
@@ -23,11 +23,15 @@ export const Typography = ({
   return (
     <Component
       {...props}
-      className={cn("", {
-        [alignText[align]]: align,
-        "mb-2": gutterBottom,
-        "mb-5": paragraph,
-      })}
+      className={cn(
+        "",
+        {
+          [alignText[align]]: align,
+          "mb-2": gutterBottom,
+          "mb-5": paragraph,
+        },
+        className
+      )}
     />
   );
 };

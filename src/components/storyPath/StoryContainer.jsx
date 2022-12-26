@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../Button";
+
 // this is the first container at the top which contains the background carousel animation
 const StoryContainer = () => {
   return (
@@ -15,9 +16,7 @@ const StoryContainer = () => {
             enroll your child
           </Button>
         </div>
-        <div>
-          
-        </div>
+        <div></div>
         <div></div>
       </div>
     </div>
