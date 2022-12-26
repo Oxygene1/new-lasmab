@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
+import Card from "../../components/card/Card";
 // import cn from "classnames";
 // import { Button } from "../../components/Button";
-import axios from "axios";
-import Header from "../../components/header/Header";
+// import axios from "axios";
+// import Header from "../../components/header/Header";
 import StoryContainer from "../../components/storyPath/StoryContainer";
 // import StoryContainer from "../../components/storyPath/StoryContainer";
 
@@ -25,9 +26,10 @@ const Home = () => {
 
   return (
     <div>
-     
-      <StoryContainer />
-      {/* <StoryContainer /> */}
+      <div>
+        <StoryContainer />
+      </div>
+      <Card />
       {/* <div className="-mt-48">{data}</div> */}
       {/* <button onClick={setData} className="text-red-600">get schools</button> */}
     </div>

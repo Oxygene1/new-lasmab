@@ -1,0 +1,12 @@
+.cardCenter {
+  align-items: center;
+  place-items: center;
+  justify-self: center;
+}
+.cardContainer {
+  align-items: center;
+  place-items: center;
+  justify-self: center;
+  justify-content: center;
+  row-gap: 3rem;
+}

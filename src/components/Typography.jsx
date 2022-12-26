@@ -4,9 +4,11 @@ export const Typography = ({
   as,
   align,
   gutterBottom,
-  color,
+  colorPrimary,
+  colorSecondary,
   paragraph,
   variant,
+  bold,
   ...props
 }) => {
   const Component = as ?? "p";
@@ -27,6 +29,9 @@ export const Typography = ({
         [alignText[align]]: align,
         "mb-2": gutterBottom,
         "mb-5": paragraph,
+        "text-white": colorSecondary,
+        "#671E78": colorPrimary,
+        "font-bold" : bold,
       })}
     />
   );
