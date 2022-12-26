@@ -4,7 +4,8 @@ export const Typography = ({
   as,
   align,
   gutterBottom,
-  color,
+  colorPrimary,
+  colorSecondary,
   paragraph,
   className,
   ...props

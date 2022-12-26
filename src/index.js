@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "../src/components/card/card.css"
 import "./index.css";
 import Home from "./screens/home/Home";
 import reportWebVitals from "./reportWebVitals";

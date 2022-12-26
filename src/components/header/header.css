@@ -9,8 +9,9 @@
 .listed li {
   margin-left: 1.5rem;
 }
-.active{
+.active {
   border-bottom: 2px solid #fff;
+  padding-bottom: 0.2rem;
 }
 @media screen and (width > 768px) {
   .storyAnimate {
