@@ -17,7 +17,8 @@
 .slide {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  place-content: center;
-  align-items: center;
+  justify-content: space-between;
+  /* place-content: center;
+  align-items: center; */
+  gap: 4rem;
 }

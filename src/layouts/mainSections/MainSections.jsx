@@ -3,7 +3,10 @@ import QuickView from "../../components/QuickView";
 import Carousel from "../carousel/Carousel";
 const Mainsections = () => {
   return (
-    <div className="bg-primary w-full p-16 place-content-center justify-center" style={{color:"#006600"}}>
+    <div
+      className="bg-primary w-full p-[5%] place-content-center justify-center"
+      style={{ color: "#006600" }}
+    >
       <QuickView />
       <Carousel />
     </div>

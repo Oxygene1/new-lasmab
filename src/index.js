@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import { store } from "./app/store";
 import "./components/header/header.css";
 import Header from "./components/header/Header";
-import Values from "./screens/values/Values";
+import Values from "./screens/vlues/Values";
 import MainSections from "./layouts/mainSections/MainSections";
 // import Carousel from "./layouts/carousel/Carousel";
 // import "slick-carousel/slick/slick.css";

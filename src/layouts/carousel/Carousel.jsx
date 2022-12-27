@@ -50,25 +50,43 @@ const SliderComponent = () => {
   };
 
   return (
-    <div className="w-9/12 bg-white p-10 ml-auto mr-auto rounded-lg">
-      <Slider className=" flex slide p-12 " {...settings}>
+    <div className="w-4/5 bg-white p-10 ml-auto mr-auto rounded-lg">
+      <Slider className="slide p-2 " {...settings}>
         <div>
-          <h3>1</h3>
+          <img className="rounded-lg"
+            src="https://marketplace.canva.com/EAEz7zOew58/2/0/1600w/canva-moon-light-logo-template-8pEo1H1XNj4.jpg"
+            alt="school logos"
+          />
         </div>
         <div>
-          <h3>2</h3>
+          <img className="rounded-lg"
+            src="https://marketplace.canva.com/EAEz7zOew58/2/0/1600w/canva-moon-light-logo-template-8pEo1H1XNj4.jpg"
+            alt="school logos"
+          />
         </div>
         <div>
-          <h3>3</h3>
+          <img className="rounded-lg"
+            src="https://marketplace.canva.com/EAEz7zOew58/2/0/1600w/canva-moon-light-logo-template-8pEo1H1XNj4.jpg"
+            alt="school logos"
+          />
         </div>
         <div>
-          <h3>4</h3>
+          <img
+            src="https://marketplace.canva.com/EAEz7zOew58/2/0/1600w/canva-moon-light-logo-template-8pEo1H1XNj4.jpg"
+            alt="school logos"
+          />
         </div>
         <div>
-          <h3>5</h3>
+          <img className="rounded-lg"
+            src="https://marketplace.canva.com/EAEz7zOew58/2/0/1600w/canva-moon-light-logo-template-8pEo1H1XNj4.jpg"
+            alt="school logos"
+          />
         </div>
         <div>
-          <h3>6</h3>
+          <img className="rounded-lg"
+            src="https://marketplace.canva.com/EAEz7zOew58/2/0/1600w/canva-moon-light-logo-template-8pEo1H1XNj4.jpg"
+            alt="school logos"
+          />
         </div>
       </Slider>
     </div>
