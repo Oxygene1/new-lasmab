@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "../src/components/card/card.css"
+import "../src/components/card/card.css";
 import "./index.css";
 import Home from "./screens/home/Home";
 import reportWebVitals from "./reportWebVitals";
@@ -9,6 +9,10 @@ import { store } from "./app/store";
 import "./components/header/header.css";
 import Header from "./components/header/Header";
 import Values from "./screens/values/Values";
+import MainSections from "./layouts/mainSections/MainSections";
+// import Carousel from "./layouts/carousel/Carousel";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 // import News from "./screens/news/News";
 // import Board from "./screens/board/Board";
 // import Contact from "./screens/contact/Contact";
@@ -22,6 +26,8 @@ root.render(
       <Header />
       <Home />
       <Values />
+      <MainSections/>
+      {/* <Carousel /> */}
     </Provider>
   </React.StrictMode>
 );

@@ -1,5 +1,4 @@
 import cn from "classnames";
-
 export const Typography = ({
   as,
   align,

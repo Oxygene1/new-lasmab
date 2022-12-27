@@ -10,3 +10,13 @@
   justify-content: center;
   row-gap: 3rem;
 }
+
+.cardIcons {
+  padding-top: 1rem;
+}
+.slide{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
