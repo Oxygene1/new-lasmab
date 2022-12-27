@@ -22,3 +22,7 @@
   align-items: center; */
   gap: 4rem;
 }
+.cardDiv {
+  padding: 0.2rem;
+}
+

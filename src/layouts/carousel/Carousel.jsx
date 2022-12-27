@@ -52,38 +52,44 @@ const SliderComponent = () => {
   return (
     <div className="w-4/5 bg-white p-10 ml-auto mr-auto rounded-lg">
       <Slider className="slide p-2 " {...settings}>
-        <div>
-          <img className="rounded-lg"
-            src="https://marketplace.canva.com/EAEz7zOew58/2/0/1600w/canva-moon-light-logo-template-8pEo1H1XNj4.jpg"
-            alt="school logos"
-          />
-        </div>
-        <div>
-          <img className="rounded-lg"
-            src="https://marketplace.canva.com/EAEz7zOew58/2/0/1600w/canva-moon-light-logo-template-8pEo1H1XNj4.jpg"
-            alt="school logos"
-          />
-        </div>
-        <div>
-          <img className="rounded-lg"
-            src="https://marketplace.canva.com/EAEz7zOew58/2/0/1600w/canva-moon-light-logo-template-8pEo1H1XNj4.jpg"
-            alt="school logos"
-          />
-        </div>
-        <div>
+        <div className="cardDiv">
           <img
+            className="rounded-lg"
             src="https://marketplace.canva.com/EAEz7zOew58/2/0/1600w/canva-moon-light-logo-template-8pEo1H1XNj4.jpg"
             alt="school logos"
           />
         </div>
-        <div>
-          <img className="rounded-lg"
+        <div className="cardDiv">
+          <img
+            className="rounded-lg"
             src="https://marketplace.canva.com/EAEz7zOew58/2/0/1600w/canva-moon-light-logo-template-8pEo1H1XNj4.jpg"
             alt="school logos"
           />
         </div>
-        <div>
-          <img className="rounded-lg"
+        <div className="cardDiv">
+          <img
+            className="rounded-lg"
+            src="https://marketplace.canva.com/EAEz7zOew58/2/0/1600w/canva-moon-light-logo-template-8pEo1H1XNj4.jpg"
+            alt="school logos"
+          />
+        </div>
+        <div className="cardDiv">
+          <img
+            className="w-full h-full"
+            src="https://marketplace.canva.com/EAEz7zOew58/2/0/1600w/canva-moon-light-logo-template-8pEo1H1XNj4.jpg"
+            alt="school logos"
+          />
+        </div>
+        <div className="cardDiv">
+          <img
+            className="rounded-lg"
+            src="https://marketplace.canva.com/EAEz7zOew58/2/0/1600w/canva-moon-light-logo-template-8pEo1H1XNj4.jpg"
+            alt="school logos"
+          />
+        </div>
+        <div className="cardDiv">
+          <img
+            className="rounded-lg"
             src="https://marketplace.canva.com/EAEz7zOew58/2/0/1600w/canva-moon-light-logo-template-8pEo1H1XNj4.jpg"
             alt="school logos"
           />
