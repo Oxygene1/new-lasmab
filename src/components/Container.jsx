@@ -20,6 +20,14 @@ export const Container = ({
     stretch: "items-stretch",
   };
 
+  let flexbox = {
+    flex: "flex",
+    sm: "sm:flex",
+    md: "md:flex",
+    lg: "lg:flex",
+    xl: "xl:flex",
+  };
+
   let justifyContent = {
     center: "justify-center",
     between: "justify-between",
@@ -41,7 +49,7 @@ export const Container = ({
       {...props}
       className={cn(
         {
-          flex,
+          [flexbox[flex]]: flex,
           "w-screen": fullWidth,
           "h-screen": fullHeight,
           "px-4 lg:px-10": !noGutter,
