@@ -14,9 +14,10 @@
 .cardIcons {
   padding-top: 1rem;
 }
-.slide{
+.slide {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  
+  justify-content: space-around;
+  place-content: center;
+  align-items: center;
 }

@@ -4,12 +4,16 @@ import { Typography } from "./Typography";
 const QuickView = () => {
   return (
     <div className="ml-auto mr-auto">
-      <Typography className="text-[18px] text-[#E159FF] ml-auto mr-auto">
-        our schools
-      </Typography>
-      <Typography className="text-[40px] text-[#fff] ml-auto mr-auto">
-        A Quick View of Our School
-      </Typography>
+      <div>
+        <Typography className="text-[18px] text-[#E159FF] text-center">
+          our schools
+        </Typography>
+      </div>
+      <div className="mb-10">
+        <Typography className="text-[40px] text-[#fff] ml-auto mr-auto text-center">
+          A Quick View of Our School
+        </Typography>
+      </div>
     </div>
   );
 };
