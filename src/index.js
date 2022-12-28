@@ -10,13 +10,7 @@ import "./components/header/header.css";
 import Header from "./components/header/Header";
 import Values from "./screens/vlues/Values";
 import MainSections from "./layouts/mainSections/MainSections";
-// import Carousel from "./layouts/carousel/Carousel";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// import News from "./screens/news/News";
-// import Board from "./screens/board/Board";
-// import Contact from "./screens/contact/Contact";
-// import OurSchools from "./screens/ourSchools/OurSchools";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -27,7 +21,6 @@ root.render(
       <Home />
       <Values />
       <MainSections/>
-      {/* <Carousel /> */}
     </Provider>
   </React.StrictMode>
 );
