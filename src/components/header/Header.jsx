@@ -13,7 +13,7 @@ const Header = () => {
           <img
             className="w-20 h-10"
             src="https://visme.co/blog/wp-content/uploads/2017/08/40-Creative-Logo-Designs-to-Inspire-You-Databerry-2.jpg"
-            alt=""
+            alt="this is the logo of lasmab "
           />
         </div>
         <div className="navigation">

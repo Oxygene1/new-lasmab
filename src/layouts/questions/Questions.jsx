@@ -64,7 +64,7 @@ const Questions = ({ props }) => {
               <input
                 {...props}
                 placeholder="Your email address"
-                className="outline-none border-b-2 border-[#1B1C31] border-solid w-full mb-[2rem]"
+                className="outline-none border-b-2 border-[#1B1C31] border-solid w-full"
                 {...register("mail", { required: "Email Address is required" })}
                 aria-invalid={errors.mail ? "true" : "false"}
               />
@@ -79,14 +79,17 @@ const Questions = ({ props }) => {
 
               <input
                 {...props}
+                type="tel"
                 placeholder="Your phone number"
-                className="outline-none border-b-2 border-[#1B1C31] border-solid w-full mb-[2rem]"
-                {...register("mail", { required: "Email Address is required" })}
-                aria-invalid={errors.mail ? "true" : "false"}
+                className="outline-none border-b-2 border-[#1B1C31] border-solid w-full"
+                {...register("phone", {
+                  required: "Your phone number is required",
+                })}
+                aria-invalid={errors.phone ? "true" : "false"}
               />
-              {errors.mail && (
+              {errors.phone && (
                 <p role="alert" {...props} className="text-red-600">
-                  {errors.mail?.message}
+                  {errors.phone?.message}
                 </p>
               )}
             </div>

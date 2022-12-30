@@ -12,6 +12,7 @@ import Values from "./screens/vlues/Values";
 import MainSections from "./layouts/mainSections/MainSections";
 import BoardMembers from "./layouts/boardMembers/BoardMembers";
 import Questions from "./layouts/questions/Questions";
+import Footer from "./components/footer/Footer";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -25,6 +26,7 @@ root.render(
       <MainSections/>
       <BoardMembers/>
       <Questions />
+      <Footer/>
     </Provider>
   </React.StrictMode>
 );

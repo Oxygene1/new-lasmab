@@ -63,9 +63,7 @@ const Admission = ({ props }) => {
         <form
           onSubmit={handleSubmit(onSubmit)}
           {...props}
-          className={cn(
-            "bg-white w-4/5 h-[468px] mr-auto ml-auto p-8 polygon"
-          )}
+          className={cn("bg-white w-4/5 h-[468px] mr-auto ml-auto p-8 polygon")}
         >
           <label className="text-[#808285]">PHONE NUMBER</label>
           <div className="border-b-2 border-[#1B1C31] border-solid w-full mb-[2rem] flex flex-row">
@@ -74,7 +72,7 @@ const Admission = ({ props }) => {
               +234
             </Typography>
             <input
-              type="number"
+              type="tel"
               {...props}
               className="outline-none  w-[85%]"
               {...register("firstName", { required: true })}
