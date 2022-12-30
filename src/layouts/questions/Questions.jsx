@@ -1,22 +1,16 @@
 import React, { useState } from "react";
-import { IoIosArrowDropdown } from "react-icons/io";
-import { Typography } from "../../components/Typography";
-import { Button } from "../../components";
 import { useForm } from "react-hook-form";
-import NigeriaFlag from "../../assets/nigeriaFlag.svg";
+import { Typography } from "../../components";
+import { Button } from "../../components";
 import cn from "classnames";
-const Admission = ({ props }) => {
+const Questions = ({props}) => {
+  const [isLoading, setIsLoading] = useState(false);
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
   const onSubmit = (data) => console.log(data);
-  const [isLoading, setIsLoading] = useState(false);
-  const [selectedValue, setSelectedValue] = useState(false);
-  const icons = {
-    color: "#fff",
-  };
   const handleClick = () => {
     setIsLoading(true);
     const interval = setInterval(() => {
@@ -25,42 +19,17 @@ const Admission = ({ props }) => {
       setIsLoading(false);
     }, 1000);
   };
-  return (
+  return <div className="bg-[#671E78] p-10 lg:flex lg:flex-row">
     <div>
-      <div
-        onClick={() => {
-          setSelectedValue(!selectedValue);
-        }}
-        className="flex border-b-[0.3px] border-solid border-white w-4/5 mr-auto ml-auto cursor-pointer"
-      >
-        <div className="w-5 h-5 rounded-full bg-[#fff] mt-3 mr-4"></div>
-        <div className=" flex-1">
-          <Typography className="text-[#fff] text-4xl">Admission</Typography>
-        </div>
-        <div>
-          <IoIosArrowDropdown {...icons} className="w-7 h-7 mt-2" />
-        </div>
+      <div>
+        <Typography>Do you have any questions?</Typography>
       </div>
-      <div
-        className={
-          selectedValue
-            ? "block place-items-center bg-white/20 p-10 w-[51.75%] h-[696px] mr-auto ml-auto  mt-8 rounded-b-lg"
-            : "hidden"
-        }
-      >
-        <div className="flex flex-col place-items-center mb-[3rem]">
-          <div>
-            <Typography {...props} className="text-white">
-              Sign up Today
-            </Typography>
-          </div>
-          <div>
-            <Typography {...props} className="text-xl text-white">
-              Start Your Child's Registration
-            </Typography>
-          </div>
-        </div>
-        <form
+      <div>
+        <Typography>fill our feedback for</Typography>
+      </div>
+    </div>
+    <div>
+    <form
           onSubmit={handleSubmit(onSubmit)}
           {...props}
           className={cn(
@@ -68,8 +37,7 @@ const Admission = ({ props }) => {
           )}
         >
           <label className="text-[#808285]">PHONE NUMBER</label>
-          <div className="border-b-2 border-[#1B1C31] border-solid w-full mb-[2rem] flex flex-row">
-            <img src={NigeriaFlag} alt="" className="w-5 h5 flex-1 mr-2" />
+         
             <Typography {...props} className="flex-1">
               +234
             </Typography>
@@ -80,7 +48,7 @@ const Admission = ({ props }) => {
               {...register("firstName", { required: true })}
               aria-invalid={errors.firstName ? "true" : "false"}
             />
-          </div>
+         
           {errors.firstName?.type === "required" && (
             <p role="alert" {...props} className="text-red-600">
               Phone number is required
@@ -109,9 +77,8 @@ const Admission = ({ props }) => {
             Verify registration
           </Button>
         </form>
-      </div>
     </div>
-  );
+  </div>;
 };
 
-export default Admission;
+export default Questions;

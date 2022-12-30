@@ -25,7 +25,10 @@ export const Button = ({
       )}
     >
       {isLoading ? (
-        <BarLoader color={variant === "secondary" ? "#671E78" : "white"} />
+        <BarLoader
+          className="fixed z-50 bottom-[10vh]"
+          color={variant === "secondary" ? "#671E78" : "white"}
+        />
       ) : (
         children
       )}

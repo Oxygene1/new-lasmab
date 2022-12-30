@@ -3,8 +3,6 @@ export const Typography = ({
   as,
   align,
   gutterBottom,
-  colorPrimary,
-  colorSecondary,
   paragraph,
   className,
   ...props

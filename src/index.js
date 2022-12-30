@@ -10,6 +10,8 @@ import "./components/header/header.css";
 import Header from "./components/header/Header";
 import Values from "./screens/vlues/Values";
 import MainSections from "./layouts/mainSections/MainSections";
+import BoardMembers from "./layouts/boardMembers/BoardMembers";
+import Questions from "./layouts/questions/Questions";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -21,6 +23,8 @@ root.render(
       <Home />
       <Values />
       <MainSections/>
+      <BoardMembers/>
+      <Questions />
     </Provider>
   </React.StrictMode>
 );

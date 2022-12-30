@@ -5,7 +5,7 @@ import AboutSchool from "../dropdowns/AboutSchool";
 import Portal from "../dropdowns/Portal";
 import Admission from "../../layouts/dropdowns/Admission";
 import Team from "../../layouts/dropdowns/Team";
-import Contact from "../../layouts/dropdowns/Contact"
+import Contact from "../../layouts/dropdowns/Contact";
 import FAQs from "../dropdowns/FAQs";
 
 const Mainsections = () => {
@@ -16,23 +16,23 @@ const Mainsections = () => {
     >
       <QuickView />
       <Carousel />
-      <div>
-        <AboutSchool/>
+      <div className="mt-10">
+        <AboutSchool />
       </div>
-      <div>
-        <Portal/>
+      <div className="mt-5">
+        <Portal />
       </div>
-      <div>
-      <Admission/>
+      <div className="mt-5">
+        <Admission />
       </div>
-      <div>
-      <Team/>
+      <div className="mt-5">
+        <Team />
       </div>
-      <div>
-        <Contact/>
+      <div className="mt-5">
+        <Contact />
       </div>
-      <div>
-        <FAQs/>
+      <div className="mt-5">
+        <FAQs />
       </div>
     </div>
   );

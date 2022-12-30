@@ -9,23 +9,27 @@ function FAQs() {
 
   return (
     <div>
-      <div onClick={() => {
-                  setSelectedValue(!selectedValue);
-                }} 
-                className="flex border-b-[0.5px] border-solid border-white w-4/5 mr-auto ml-auto">
+      <div
+        onClick={() => {
+          setSelectedValue(!selectedValue);
+        }}
+        className="flex border-b-[0.3px] border-solid border-white w-4/5 mr-auto ml-auto"
+      >
         <div className="w-5 h-5 rounded-full bg-[#fff] mt-3 mr-4"></div>
         <div className=" flex-1">
-          <Typography className="text-[#fff] text-4xl">
-            FAQs
-          </Typography>
+          <Typography className="text-[#fff] text-4xl">FAQs</Typography>
         </div>
         <div>
           <IoIosArrowDropdown {...icons} className="w-7 h-7 mt-2" />
         </div>
       </div>
-      <div className={
-          selectedValue ? "block place-items-center bg-white/20 p-10 w-4/5 mr-auto ml-auto  mt-8 rounded-b-lg" : "hidden"
-      }>
+      <div
+        className={
+          selectedValue
+            ? "block place-items-center bg-white/20 p-10 w-4/5 mr-auto ml-auto  mt-8 rounded-b-lg"
+            : "hidden"
+        }
+      >
         <Typography className="text-lg text-[#fff]">
           End-to-end payments and financial management in a single solution.
           Meet the right platform.End-to-end payments and financial management
