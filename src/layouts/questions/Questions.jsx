@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { Typography } from "../../components";
 import { Button } from "../../components";
 import cn from "classnames";
-const Questions = ({props}) => {
+const Questions = ({ props }) => {
   const [isLoading, setIsLoading] = useState(false);
   const {
     register,
@@ -19,53 +19,96 @@ const Questions = ({props}) => {
       setIsLoading(false);
     }, 1000);
   };
-  return <div className="bg-[#671E78] p-10 lg:flex lg:flex-row">
-    <div>
+  return (
+    <div className="bg-[#671E78] p-10 lg:flex lg:flex-row place-items-center justify-items-center justify-center">
       <div>
-        <Typography>Do you have any questions?</Typography>
+        <div>
+          <Typography {...props} className="text-white text-2xl">
+            Do you have any <br /> questions?
+          </Typography>
+        </div>
+        <div>
+          <Typography className="text-white text-xl">
+            fill our feedback for
+          </Typography>
+        </div>
       </div>
       <div>
-        <Typography>fill our feedback for</Typography>
-      </div>
-    </div>
-    <div>
-    <form
+        <form
           onSubmit={handleSubmit(onSubmit)}
           {...props}
-          className={cn(
-            "bg-white w-4/5 h-[468px] mr-auto ml-auto p-8 polygon"
-          )}
+          className={cn("bg-white w-4/5 h-[60%] mr-auto ml-auto p-8 polygon")}
         >
-          <label className="text-[#808285]">PHONE NUMBER</label>
-         
-            <Typography {...props} className="flex-1">
-              +234
-            </Typography>
+          <div className="flex flex-col">
+            <label className="text-[#808285]">NAME:</label>
             <input
-              type="number"
+              type="text"
+              placeholder="Full Name"
               {...props}
-              className="outline-none  w-[85%]"
-              {...register("firstName", { required: true })}
-              aria-invalid={errors.firstName ? "true" : "false"}
+              className="outline-none  w-[100%] border-b-2 border-[#1B1C31] border-solid"
+              {...register("fullName", { required: true })}
+              aria-invalid={errors.fullName ? "true" : "false"}
             />
-         
-          {errors.firstName?.type === "required" && (
-            <p role="alert" {...props} className="text-red-600">
-              Phone number is required
-            </p>
-          )}
-          <label className="text-[#808285]">EMAIL</label>
-          <input
-            {...props}
-            className="outline-none border-b-2 border-[#1B1C31] border-solid w-full mb-[2rem]"
-            {...register("mail", { required: "Email Address is required" })}
-            aria-invalid={errors.mail ? "true" : "false"}
-          />
-          {errors.mail && (
-            <p role="alert" {...props} className="text-red-600">
-              {errors.mail?.message}
-            </p>
-          )}
+
+            {errors.fullName?.type === "required" && (
+              <p role="alert" {...props} className="text-red-600">
+                Your full name is required
+              </p>
+            )}
+          </div>
+
+          <div className="flex lg:flex-row sm:flex-col mt-5 gap-7">
+            <div>
+              <label className="text-[#808285]">EMAIL</label>
+
+              <input
+                {...props}
+                placeholder="Your email address"
+                className="outline-none border-b-2 border-[#1B1C31] border-solid w-full mb-[2rem]"
+                {...register("mail", { required: "Email Address is required" })}
+                aria-invalid={errors.mail ? "true" : "false"}
+              />
+              {errors.mail && (
+                <p role="alert" {...props} className="text-red-600">
+                  {errors.mail?.message}
+                </p>
+              )}
+            </div>
+            <div>
+              <label className="text-[#808285]">PHONE</label>
+
+              <input
+                {...props}
+                placeholder="Your phone number"
+                className="outline-none border-b-2 border-[#1B1C31] border-solid w-full mb-[2rem]"
+                {...register("mail", { required: "Email Address is required" })}
+                aria-invalid={errors.mail ? "true" : "false"}
+              />
+              {errors.mail && (
+                <p role="alert" {...props} className="text-red-600">
+                  {errors.mail?.message}
+                </p>
+              )}
+            </div>
+          </div>
+
+          <div className="mt-5">
+            <label className="text-[#808285]">FEEDBACK:</label>
+            <textarea
+              placeholder="your feedback here"
+              {...register("feedback", {
+                required: "Feedback message is required",
+              })}
+              aria-invalid={errors.feedback ? "true" : "false"}
+              className="outline-none  border-b-2 border-[#1B1C31] border-solid w-full"
+            ></textarea>
+
+            {errors.feedback && (
+              <p role="alert" {...props} className="text-red-600">
+                {errors.feedback?.message}
+              </p>
+            )}
+          </div>
 
           <Button
             {...props}
@@ -74,11 +117,12 @@ const Questions = ({props}) => {
             className="text-white bg-primary p-5 w-[100%] mt-40"
             title="submit"
           >
-            Verify registration
+            send message
           </Button>
         </form>
+      </div>
     </div>
-  </div>;
+  );
 };
 
 export default Questions;
