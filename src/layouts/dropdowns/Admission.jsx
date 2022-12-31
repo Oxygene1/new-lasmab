@@ -44,7 +44,7 @@ const Admission = ({ props }) => {
       <div
         className={
           selectedValue
-            ? "block place-items-center bg-white/20 p-10 w-[51.75%] h-[696px] mr-auto ml-auto  mt-8 rounded-b-lg"
+            ? "block place-items-center bg-white/20 p-10 w-[100%] md:w-[51.75%] mr-auto ml-auto  mt-8 rounded-b-lg"
             : "hidden"
         }
       >
@@ -63,7 +63,9 @@ const Admission = ({ props }) => {
         <form
           onSubmit={handleSubmit(onSubmit)}
           {...props}
-          className={cn("bg-white w-4/5 h-[468px] mr-auto ml-auto p-8 polygon")}
+          className={cn(
+            "bg-white w-[100%] h-[100%] mr-auto ml-auto p-8 polygon"
+          )}
         >
           <label className="text-[#808285]">PHONE NUMBER</label>
           <div className="border-b-2 border-[#1B1C31] border-solid w-full mb-[2rem] flex flex-row">

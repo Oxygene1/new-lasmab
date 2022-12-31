@@ -21,14 +21,17 @@ const Questions = ({ props }) => {
   };
   return (
     <div className="bg-[#671E78] p-10 lg:flex lg:flex-row place-items-center justify-items-center justify-center">
-      <div>
+      <div className="mb-5 lg:mb-0 grid place-content-center">
         <div>
-          <Typography {...props} className="text-white text-2xl">
+          <Typography
+            {...props}
+            className="text-white text-[24] lg:text-[60px] md:text-[40px]"
+          >
             Do you have any <br /> questions?
           </Typography>
         </div>
         <div>
-          <Typography className="text-white text-xl">
+          <Typography className="text-white text-sm md:text-[24px]">
             fill our feedback for
           </Typography>
         </div>
@@ -37,7 +40,7 @@ const Questions = ({ props }) => {
         <form
           onSubmit={handleSubmit(onSubmit)}
           {...props}
-          className={cn("bg-white w-4/5 h-[60%] mr-auto ml-auto p-8 polygon")}
+          className={cn("bg-white w-4/5 h-[100%] mr-auto ml-auto p-8 polygon")}
         >
           <div className="flex flex-col">
             <label className="text-[#808285]">NAME:</label>
@@ -57,8 +60,8 @@ const Questions = ({ props }) => {
             )}
           </div>
 
-          <div className="flex lg:flex-row sm:flex-col mt-5 gap-7">
-            <div>
+          <div className="flex md:flex-row flex-col md:mt-5 md:gap-7 w-full">
+            <div className="w-full mt-5 md:mt-0">
               <label className="text-[#808285]">EMAIL</label>
 
               <input
@@ -74,7 +77,7 @@ const Questions = ({ props }) => {
                 </p>
               )}
             </div>
-            <div>
+            <div className="w-full mt-5 md:mt-0">
               <label className="text-[#808285]">PHONE</label>
 
               <input

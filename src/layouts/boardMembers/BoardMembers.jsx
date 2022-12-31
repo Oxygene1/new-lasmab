@@ -17,8 +17,8 @@ const BoardMembers = ({ props }) => {
           Meet Our Awesome Board Members
         </Typography>
       </div>
-      <div className="flex flex-row mr-auto ml-auto gap-5 place-items-center justify-items-center justify-center">
-        <div>
+      <div className="grid lg:flex lg:flex-row mr-auto ml-auto md:gap-5 place-items-center justify-items-center justify-center">
+        <div className="grid justify-center">
           <div>
             <img
               className="w-[278px] h-[278px] rounded-xl"
@@ -26,7 +26,7 @@ const BoardMembers = ({ props }) => {
               alt=""
             />
           </div>
-          <div className="flex flex-row">
+          <div className="flex flex-row w-[278px]">
             <div className="flex-1">
               <Typography
                 {...props}
@@ -49,7 +49,7 @@ const BoardMembers = ({ props }) => {
           </div>
         </div>
 
-        <div>
+        <div className="flex justify-center place-items-center mb-5 mt-5 md:mb-0 md:mt-0 flex-col-reverse md:flex-col">
           <div>
             <img
               className="w-[278px] h-[278px] rounded-xl"
@@ -57,7 +57,7 @@ const BoardMembers = ({ props }) => {
               alt=""
             />
           </div>
-          <div className="flex flex-row">
+          <div className="flex flex-row w-[278px]">
             <div className="flex-1">
               <Typography
                 {...props}
@@ -79,7 +79,7 @@ const BoardMembers = ({ props }) => {
             </Typography>
           </div>
         </div>
-        <div>
+        <div className="grid justify-center">
           <div>
             <img
               className="w-[278px] h-[278px] rounded-xl"
@@ -87,7 +87,7 @@ const BoardMembers = ({ props }) => {
               alt=""
             />
           </div>
-          <div className="flex flex-row">
+          <div className="flex flex-row w-[278px]">
             <div className="flex-1">
               <Typography
                 {...props}

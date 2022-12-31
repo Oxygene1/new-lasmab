@@ -14,15 +14,7 @@
 .cardIcons {
   padding-top: 1rem;
 }
-.slide {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 4rem;
-}
-.cardDiv {
-  padding: 0.2rem;
-}
+
 
 .polygon {
   clip-path: polygon(
@@ -34,3 +26,7 @@
     73.5% 0%
   );
 }
+
+
+
+

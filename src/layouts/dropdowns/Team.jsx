@@ -31,8 +31,8 @@ const Team = ({ props }) => {
             ? "block place-items-center bg-white/20 p-10 w-4/5 mr-auto ml-auto  mt-8 rounded-b-lg"
             : "hidden"
         }
-        >
-        <div className="flex flex-row mr-auto ml-auto gap-5 place-items-center justify-items-center justify-center">
+      >
+        <div className="grid lg:flex lg:flex-row mr-auto ml-auto gap-5 place-items-center justify-items-center justify-center">
           <div>
             <div>
               <img
@@ -125,7 +125,7 @@ const Team = ({ props }) => {
             </div>
           </div>
         </div>
-        <div className="flex flex-row mr-auto ml-auto gap-5 justify-items-center justify-center">
+        <div className="grid lg:flex lg:flex-row mr-auto ml-auto gap-5 justify-items-center justify-center">
           <div>
             <div>
               <img
