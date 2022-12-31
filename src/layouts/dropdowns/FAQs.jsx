@@ -17,7 +17,7 @@ function FAQs() {
       >
         <div className="w-5 h-5 rounded-full bg-[#fff] mt-3 mr-4"></div>
         <div className=" flex-1">
-          <Typography className="text-[#fff] text-4xl">FAQs</Typography>
+          <Typography className="text-[#fff] text-2xl mdtext-3xl lg:text-4xl">FAQs</Typography>
         </div>
         <div>
           <IoIosArrowDropdown {...icons} className="w-7 h-7 mt-2" />

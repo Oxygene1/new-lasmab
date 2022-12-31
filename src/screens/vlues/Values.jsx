@@ -10,9 +10,9 @@ const Values = () => {
         flex="lg"
         noGutter
         justify="evenly"
-        className="bg-[#671E78] justify-center p-10 lg:rounded-xl md:w-4/5 lg:w-4/5 lg:pl-20 md:mr-auto md:ml-auto"
+        className="bg-[#671E78] justify-center p-10 lg:rounded-xl md:w-[90%] lg:w-[90%] lg:pl-20 md:mr-auto md:ml-auto"
       >
-        <div className="lg:border-r lg:pr-8 lg:border-dashed mr-auto ml-auto mb-5 border-b border-dashed lg:border-b-0">
+        <div className="pb-3 lg:pb-0 lg:border-r lg:pr-8 lg:border-dashed mr-auto ml-auto mb-5 border-b border-dashed lg:border-b-0">
           <div className="h-[80px] w-[80px] mb-6 bg-white/20 rounded-lg mr-auto ml-auto md:mr-0 md:ml-0">
             <HiAcademicCap
               color="#E159FF"
@@ -28,7 +28,7 @@ const Values = () => {
           </Typography>
         </div>
 
-        <div className="lg:border-b-0 lg:pl-5 mb-5 border-b border-dashed lg:border-r lg:border-dashed lg:pr-8 ">
+        <div className=" pb-3 lg:pb-0 lg:border-b-0 lg:pl-5 mb-5 border-b border-dashed lg:border-r lg:border-dashed lg:pr-8 ">
           <div className="h-[80px] w-[80px] mb-6 bg-white/20 rounded-lg mr-auto ml-auto md:mr-0 md:ml-0">
             <HiOutlineLightBulb
               color="#5E9C08"

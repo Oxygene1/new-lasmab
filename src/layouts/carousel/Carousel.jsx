@@ -56,11 +56,11 @@ const SliderComponent = ({ props }) => {
   const handleSchoolSelection = async (school) => {
     try {
       setSelectedSchools(school);
-      // const result = await axios.get(
-      //   `https://lasmab.azurewebsites.net/api/v1.0/Website/GetSchoolProfile/${school?.schoolid}`
-      // );
+      const result = await axios.get(
+        `https://lasmab.azurewebsites.net/api/v1.0/Website/GetSchoolProfile/${school?.schoolid}`
+      );
 
-      // console.log(result);
+      console.log(result);
       // save the result payload to redux store.
     } catch (error) {
       console.log(error);

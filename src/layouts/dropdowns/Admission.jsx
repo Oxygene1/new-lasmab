@@ -35,7 +35,7 @@ const Admission = ({ props }) => {
       >
         <div className="w-5 h-5 rounded-full bg-[#fff] mt-3 mr-4"></div>
         <div className=" flex-1">
-          <Typography className="text-[#fff] text-4xl">Admission</Typography>
+          <Typography className="text-[#fff] text-2xl md:text-3xl lg:text-4xl">Admission</Typography>
         </div>
         <div>
           <IoIosArrowDropdown {...icons} className="w-7 h-7 mt-2" />
@@ -44,7 +44,7 @@ const Admission = ({ props }) => {
       <div
         className={
           selectedValue
-            ? "block place-items-center bg-white/20 p-10 w-[100%] md:w-[51.75%] mr-auto ml-auto  mt-8 rounded-b-lg"
+            ? "block place-items-center md:bg-white/20 md:p-10 w-[100%] md:w-[51.75%] mr-auto ml-auto  mt-8 rounded-b-lg"
             : "hidden"
         }
       >
@@ -77,11 +77,11 @@ const Admission = ({ props }) => {
               type="tel"
               {...props}
               className="outline-none  w-[85%]"
-              {...register("firstName", { required: true })}
-              aria-invalid={errors.firstName ? "true" : "false"}
+              {...register("phone", { required: true })}
+              aria-invalid={errors.phone ? "true" : "false"}
             />
           </div>
-          {errors.firstName?.type === "required" && (
+          {errors.phone?.type === "required" && (
             <p role="alert" {...props} className="text-red-600">
               Phone number is required
             </p>

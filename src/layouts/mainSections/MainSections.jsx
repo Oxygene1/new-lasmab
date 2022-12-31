@@ -11,7 +11,7 @@ import FAQs from "../dropdowns/FAQs";
 const Mainsections = () => {
   return (
     <div
-      className="bg-primary w-full p-[5%] place-content-center justify-center"
+      className="bg-primary w-full py-20 md:p-[5%] place-content-center justify-center"
       style={{ color: "#006600" }}
     >
       <QuickView />

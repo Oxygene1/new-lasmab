@@ -20,7 +20,7 @@ const Questions = ({ props }) => {
     }, 1000);
   };
   return (
-    <div className="bg-[#671E78] p-10 lg:flex lg:flex-row place-items-center justify-items-center justify-center">
+    <div className="bg-[#671E78] p-5 md:p-10 lg:flex lg:flex-row place-items-center justify-items-center justify-center">
       <div className="mb-5 lg:mb-0 grid place-content-center">
         <div>
           <Typography
@@ -40,7 +40,9 @@ const Questions = ({ props }) => {
         <form
           onSubmit={handleSubmit(onSubmit)}
           {...props}
-          className={cn("bg-white w-4/5 h-[100%] mr-auto ml-auto p-8 polygon")}
+          className={cn(
+            "bg-white w-[100%] md:w-4/5 h-[100%] mr-auto ml-auto p-8 polygon"
+          )}
         >
           <div className="flex flex-col">
             <label className="text-[#808285]">NAME:</label>
@@ -120,7 +122,7 @@ const Questions = ({ props }) => {
             {...props}
             isLoading={isLoading}
             onClick={handleClick}
-            className="text-white bg-primary p-5 w-[100%] mt-40"
+            className="text-white bg-primary p-5 w-[100%] mt-10 md:mt-40"
             title="submit"
           >
             send message
