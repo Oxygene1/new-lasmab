@@ -11,7 +11,7 @@ const Header = ({ props }) => {
     <div>
       <div
         id="blur-back"
-        className="flex flex-row container h-[128px] pt-[7%] px-[2%] md:px-0 md:pt-[2%]"
+        className="flex flex-row container h-[100px] md:h-[128px] pt-[7%] px-[2%] md:px-0 md:pt-[2%]"
       >
         <div className="p-1 md:p-0">
           <img
@@ -21,7 +21,7 @@ const Header = ({ props }) => {
           />
         </div>
         <div className="navigation ">
-          <ul className="flex flex-row content-between listed text-white pt-3">
+          <ul className="flex flex-row content-between listed text-white pt-3 w-[80%]h-[100%]">
             <li>
               <a href="#home" className="active">
                 Home
@@ -69,25 +69,27 @@ const Header = ({ props }) => {
             : "hidden"
         }
       >
-        <ul className="flex flex-col content-between listed text-white mr-auto ml-auto">
-          <li>
+        <ul
+          className="flex flex-col font-semibold content-between listed text-white mr-auto ml-auto"
+        >
+          <li className="mb-5">
             <a href="#home" className="active">
               Home
             </a>
           </li>
-          <li>
+          <li className="mb-5">
             <a href="values">Values</a>
           </li>
-          <li>
+          <li className="mb-5">
             <a href="our-schools">Our Schools</a>
           </li>
-          <li>
+          <li className="mb-5">
             <a href="board">Board</a>
           </li>
-          <li>
+          <li className="mb-5">
             <a href="news">News</a>
           </li>
-          <li>
+          <li className="mb-5">
             <a href="contact">Contact</a>
           </li>
           <li>

@@ -11,13 +11,13 @@
 .listed li {
   margin-left: 1.5rem;
 }
-.active {
-  border-bottom: 2px solid #fff;
-  padding-bottom: 0.2rem;
-}
+
 @media screen and (width > 768px) {
+  .active {
+    border-bottom: 2px solid #fff;
+  }
   .storyAnimate {
-    background: url("../../assets/proxy.jpeg");
+    background: url("../../assets/secschpic1.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -34,22 +34,22 @@
   }
   @keyframes animateBg {
     0% {
-      background-image: url("../../assets/proxy2.jpeg");
+      background-image: url("../../assets/secschpic1.jpeg");
     }
-    20% {
-      background-image: url("../../assets/proxy3.jpeg");
+    25% {
+      background-image: url("../../assets/secschpic2.webp");
     }
-    40% {
-      background-image: url("../../assets/proxy4.jpeg");
+    50% {
+      background-image: url("../../assets/secschpic3.jpeg");
     }
-    60% {
-      background-image: url("../../assets/proxy5.jpeg");
+    75% {
+      background-image: url("../../assets/secschpic4.jpeg");
     }
-    80% {
-      background-image: url("../../assets/proxy2.jpeg");
+    90% {
+      background-image: url("../../assets/secschpic5.jpg");
     }
     100% {
-      background-image: url("../../assets/proxy.jpeg");
+      background-image: url("../../assets/secschpic3.jpeg");
     }
   }
   .hamburger {
@@ -76,7 +76,7 @@
     justify-content: space-between;
   }
   .storyAnimate {
-    background: url("../../assets/proxy.jpeg");
+    background: url("../../assets/secschpic1.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -93,22 +93,25 @@
   }
   @keyframes animateBg {
     0% {
-      background-image: url("../../assets/proxy2.jpeg");
+      background-image: url("../../assets/secschpic1.jpeg");
     }
-    20% {
-      background-image: url("../../assets/proxy3.jpeg");
+    25% {
+      background-image: url("../../assets/secschpic2.webp");
     }
-    40% {
-      background-image: url("../../assets/proxy4.jpeg");
+    50% {
+      background-image: url("../../assets/secschpic3.jpeg");
     }
-    60% {
-      background-image: url("../../assets/proxy5.jpeg");
+    75% {
+      background-image: url("../../assets/secschpic4.jpeg");
     }
-    80% {
-      background-image: url("../../assets/proxy2.jpeg");
+    90% {
+      background-image: url("../../assets/secschpic5.jpg");
     }
     100% {
-      background-image: url("../../assets/proxy.jpeg");
+      background-image: url("../../assets/secschpic3.jpeg");
     }
+  }
+  .active {
+    border-bottom: 2px solid #fff;
   }
 }
