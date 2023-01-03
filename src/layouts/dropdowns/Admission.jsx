@@ -33,12 +33,14 @@ const Admission = ({ props }) => {
         }}
         className="flex border-b-[0.3px] border-solid border-white w-4/5 mr-auto ml-auto cursor-pointer"
       >
-        <div className="w-5 h-5 rounded-full bg-[#fff] mt-3 mr-4"></div>
+        <div className="w-4 h-4 rounded-full bg-[#fff] mt-2 mr-4"></div>
         <div className=" flex-1">
-          <Typography className="text-[#fff] text-2xl md:text-3xl lg:text-4xl">Admission</Typography>
+          <Typography className="text-[#fff] text-2xl md:text-3xl">
+            Admission
+          </Typography>
         </div>
         <div>
-          <IoIosArrowDropdown {...icons} className="w-7 h-7 mt-2" />
+        <IoIosArrowDropdown {...icons} className="w-7 h-7 mb-[0.2rem]" />
         </div>
       </div>
       <div

@@ -17,14 +17,14 @@ const Portal = ({ props }) => {
         }}
         className="flex border-b-[0.3px] border-solid border-white w-4/5 mr-auto ml-auto cursor-pointer"
       >
-        <div className="w-5 h-5 rounded-full bg-[#fff] mt-3 mr-4"></div>
+        <div className="w-4 h-4 rounded-full bg-[#fff] mt-2 mr-4"></div>
         <div className=" flex-1">
-          <Typography className="text-[#fff] text-2xl mdtext-3xl lg:text-4xl">
+          <Typography className="text-[#fff] text-2xl md:text-3xl">
             Contact
           </Typography>
         </div>
         <div>
-          <IoIosArrowDropdown {...icons} className="w-7 h-7 mt-2" />
+        <IoIosArrowDropdown {...icons} className="w-7 h-7 mb-[0.2rem]" />
         </div>
       </div>
       <div
@@ -35,7 +35,7 @@ const Portal = ({ props }) => {
         }
       >
         <div className="flex gap-3 mb-5 lg:mb-0">
-          <HiEnvelope {...icons} />
+          <HiEnvelope {...icons} className="mt-1" />
           <a href="mailto:thelasmab@yahoo.com">
             <Typography {...props} className="text-white">
               thelasmab@yahoo.com
@@ -43,7 +43,7 @@ const Portal = ({ props }) => {
           </a>
         </div>
         <div className="flex gap-3 mb-5 lg:mb-0">
-          <BsFillTelephoneFill {...icons} />
+          <BsFillTelephoneFill {...icons} className="mt-1" />
 
           <a href="tel:+23481342343533">
             <Typography {...props} className="text-white">
@@ -52,7 +52,7 @@ const Portal = ({ props }) => {
           </a>
         </div>
         <div className="flex gap-3">
-          <BsFillChatDotsFill {...icons} />
+          <BsFillChatDotsFill {...icons} className="mt-1" />
           <Typography {...props} className="text-white">
             Chat with an admin
           </Typography>

@@ -8,7 +8,7 @@ const StoryContainer = ({ props }) => {
     <div className="storyAnimate grid content-center">
       <div className="ml-auto mr-auto lg:ml-[10%] p-5 md:p-0">
         <div className="mb-10">
-          <h1 className="text-white text-3xl md:text-6xl">
+          <h1 className="text-white text-3xl md:text-6xl font-bold">
             Lets be part of <br /> Your story
           </h1>
         </div>

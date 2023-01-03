@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700&display=swap");
+
 .cardCenter {
   align-items: center;
   place-items: center;
@@ -15,7 +17,6 @@
   padding-top: 1rem;
 }
 
-
 .polygon {
   clip-path: polygon(
     99.75% 0%,
@@ -27,6 +28,11 @@
   );
 }
 
-
-
-
+a,
+button,
+h1,
+p,
+li,
+input {
+  font-family: "Khula", sans-serif;
+}

@@ -25,14 +25,15 @@ const Questions = ({ props }) => {
         <div>
           <Typography
             {...props}
-            className="text-white text-[24] lg:text-[60px] md:text-[40px]"
+            className="text-white text-[24] lg:text-[60px] md:text-[40px] font-bold"
           >
-            Do you have any <br /> questions?
+            Do you have any <br className="hidden lg:flex lg:flex-row" />{" "}
+            questions?
           </Typography>
         </div>
         <div>
-          <Typography className="text-white text-sm md:text-[24px]">
-            fill our feedback for
+          <Typography className="text-white text-sm md:text-[24px] mt-5 md:mt-3 text-center lg:text-start">
+            fill our feedback form
           </Typography>
         </div>
       </div>

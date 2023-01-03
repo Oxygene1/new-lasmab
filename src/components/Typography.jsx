@@ -16,6 +16,7 @@ export const Typography = ({
     justify: "text-justify",
     start: "text-start",
     end: "text-end",
+    font: "Khula",
   };
 
   return (
